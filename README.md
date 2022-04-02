@@ -1,18 +1,8 @@
-# Reddit Placebot
+# Reddit Transplacebot
 
 > Anything that can be automated should be automated
 
-[**Place has ended**](https://www.reddit.com/r/place/comments/6382bb/place_has_ended/). It was a good run, thanks everyone that supported the project!
-
----
-
-This is a bot I made for the Reddit [/r/place](https://www.reddit.com/r/place/) event of 2017 April Fools Day. I just wanted to make a simple quick script because I expected it to last until April 2nd. It lasted a total of 72 hours.
-
-Originally made this bot to protect our national flag on [/r/argentina](https://www.reddit.com/r/argentina/). But you can use it
-for your artwork or evil deeds, with your own account, your other 4 throwaways, or
-the 1000 accounts dump you found on Pastebin. The Placebot is impartial and doesn't discriminate.
-
-![The /r/place final board](https://raw.githubusercontent.com/Zequez/reddit-placebot/master/images/board.final.png)
+Forked from https://github.com/Zequez/reddit-placebot
 
 ## Non-tech install
 
@@ -27,41 +17,10 @@ These are the step-by step instructions for non-tech people:
 - Run every time you want to use it: *start.bat* (Windows) or *start.sh* (Linux or Mac)
 - Configure stuff if you need to on *config.json*, or open the start scripts and add command line arguments there
 
-Para la imagen oficial de Argentina usen *start_argentina.bat* o *start_argentina.sh*
-
-## Installation
-
-You need to have [NodeJS installed](https://nodejs.org)
-
-```
-git clone https://github.com/zequez/reddit-placebot
-cd reddit-placebot
-npm install
-```
-
 ### Users
 
 Change `users.example.json` to `users.json` and add your username and password
 of your account and all your throwaways.
-
-## Usage
-
-Any command line options will override the options on `config.json`:
-
-```
-  npm run start
-  npm run start --remote --target <REMOTE_TARGET_URL>
-  npm run start --target <LOCAL_TARGET_FILE>
-  npm run start --target <LOCAL_TARGET_FILE> --startX <targetStartX> --startY <targetStartY>
-```
-
-### Target Oficial Argentino
-
-Este comando es nosotros _boludo_:
-
-`npm run start --argentinaTarget`
-
-This uses the file at: https://raw.githubusercontent.com/Zequez/placebot-argentina-target/master/official_target.png
 
 ## Configuration
 
@@ -116,14 +75,6 @@ changes all at the same time, change the config:
 - `drawMode: <mode> (default = 'RANDOM')`
   - `'LEFTTOP'`: Will draw from left to right and top to bottom
   - `'RANDOM'`: Will draw at random points
-
-## Testing
-
-LOL
-
-My initial intention was to make a simple script, didn't expect it to last, so
-testing manually was feasible. Now I should be writing tests, because it's getting
-tedious, but I don't know how long will /r/place last for.
 
 ## Other Projects
 
